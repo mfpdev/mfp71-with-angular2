@@ -64,7 +64,7 @@
         <preference name="loginDisplay" value="embedded" />
         <preference name="wlNativeVersion" value="3733673195" />
     </platform>
-    <preference name="mfpServerUrl" value="http://192.168.20.116:10080" />
+    <preference name="mfpServerUrl" value="http://9.148.225.177:10080" />
     <preference name="mfpServerRuntime" value="AngularAndMF71" />
     <preference name="displayName" value="myapp" />
     <preference name="mfpManualInit" value="false" />

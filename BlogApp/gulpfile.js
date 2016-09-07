@@ -36,6 +36,7 @@ var config = {
     ],
     css : [
         require.resolve('bootstrap/dist/css/bootstrap.min.css'),
+        require.resolve('bootstrap/dist/css/bootstrap.min.css.map'),
         require.resolve('bootstrap/dist/fonts/glyphicons-halflings-regular.woff2') 
     ]
 };

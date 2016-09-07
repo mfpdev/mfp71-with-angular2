@@ -1,1 +1,4 @@
-{}
+{
+    "ios": "/Applications/IBM/MobileFirst-CLI/mobilefirst-cli/node_modules/cordovacmd/cordova/platforms/cordova-ios",
+    "android": "/Applications/IBM/MobileFirst-CLI/mobilefirst-cli/node_modules/cordovacmd/cordova/platforms/cordova-android"
+}

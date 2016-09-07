@@ -1,5 +1,7 @@
 # Running MobileFirst Platform Foundation 7.1 Cordova app with Angular 2
 
+![alt text]("./screen.png)
+
 ## Prerequisites
 
 * [Install Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
@@ -45,16 +47,16 @@
     $ gulp watch
     ```
 
+  - Add the cordova-plugin-mfp plugin  :
+
+      ```bash
+      $ mfp cordova plugin add cordova-plugin-mfp
+      ```
+
   - Add your platform (ios/android):
 
     ```bash
     $ mfp cordova platform add ios
-    ```
-
-  - Add the cordova-plugin-mfp plugin  :
-
-    ```bash
-    $ mfp cordova plugin add cordova-plugin-mfp
     ```
 
   - Deploy the application:
