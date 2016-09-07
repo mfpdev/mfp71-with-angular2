@@ -1,6 +1,6 @@
 # Running MobileFirst Platform Foundation 7.1 Cordova app with Angular 2
 
-![alt text]("./screen.png)
+![alt text](./screen.png)
 
 ## Prerequisites
 
