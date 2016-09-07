@@ -18,14 +18,14 @@ var cssroot = "./www/css"
 var config = {
     libBase: 'node_modules',
     lib: [
-        require.resolve('@angular/common/common.umd.js'),
-        require.resolve('@angular/compiler/compiler.umd.js'),
-        require.resolve('@angular/core/core.umd.js'),
-        require.resolve('@angular/router/router.umd.js'),
-        require.resolve('@angular/platform-browser/platform-browser.umd.js'),
-        require.resolve('@angular/platform-browser-dynamic/platform-browser-dynamic.umd.js'),
-        require.resolve('@angular/upgrade/upgrade.umd.js'),
-        require.resolve('@angular/http/http.umd.js'),
+        require.resolve('@angular/common/bundles/common.umd.js'),
+        require.resolve('@angular/compiler/bundles/compiler.umd.js'),
+        require.resolve('@angular/core/bundles/core.umd.js'),
+        require.resolve('@angular/router/bundles/router.umd.js'),
+        require.resolve('@angular/platform-browser/bundles/platform-browser.umd.js'),
+        require.resolve('@angular/platform-browser-dynamic/bundles/platform-browser-dynamic.umd.js'),
+        require.resolve('@angular/upgrade/bundles/upgrade.umd.js'),
+        require.resolve('@angular/http/bundles/http.umd.js'),
 
         require.resolve('es6-shim/es6-shim.js'),
         require.resolve('reflect-metadata/Reflect.js'),
