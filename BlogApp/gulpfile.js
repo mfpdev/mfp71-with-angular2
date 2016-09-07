@@ -70,7 +70,7 @@ gulp.task('build', ['clean','build.lib','build.css','copy-rxjs-lib'], function (
 
 gulp.task('clean', function () {
     return del([angularroot]);
-});
+}); 
 
 gulp.task('default', ['build']);
 
@@ -78,7 +78,7 @@ gulp.task('watch', function () {
     gulp.watch('app/**/*.ts', function (event) {
         console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
         var tsProject = typescript.createProject('./tsconfig.json', { typescript: require('typescript') });
-        gulp.src([event.path])
+        tsProject.src([event.path])
             .pipe(inlineNg2Template())
             .pipe(sourcemaps.init())
             .pipe(typescript(tsProject))

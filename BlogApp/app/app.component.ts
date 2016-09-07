@@ -9,7 +9,7 @@ import { Injectable, NgZone } from '@angular/core';
 
 export class AppComponent { 
   feed = [];  
-  
+    
   constructor(private changeDetector: ChangeDetectorRef, private zone: NgZone) {
     addEventListener ("mfpready",function () {
       this.getMFBlogFeed()

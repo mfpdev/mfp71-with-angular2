@@ -10,11 +10,12 @@
     "noImplicitAny": false,
     "outDir": "www/js/angular/app"
   },
-  "files": [
-        "app/main.ts",
-        "app/app.module.ts",
-        "app/app.component.ts",
-        "app/boot.ts",
-        "app/systemjs.config.ts"
+   "filesGlob": [
+        "./**/*.ts",
+        "!node_modules/**/*.ts"
+    ], "exclude": [
+      "node_modules",
+      "www",
+      "platforms"
     ]
 }
