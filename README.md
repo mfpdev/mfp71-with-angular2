@@ -16,7 +16,7 @@
  ```
 - Deploy the MFRSSAdapter
 
-  - Copy the [MFRSSAdapter](https://github.com/mfpdev/mfp71-with-ionic2/tree/master/MFRSSAdapter) Copy the MFRSSAdapter folder to the `adapters` folder on your MFP 7.1 server.
+  - Copy the [MFRSSAdapter](https://github.com/mfpdev/mfp71-with-angular2/tree/master/MFRSSAdapter) Copy the MFRSSAdapter folder to the `adapters` folder on your MFP 7.1 server.
 
   - Build and deploy the adapter:
     - From the terminal window, navigate into the adapter folder and run the following:
@@ -26,20 +26,20 @@
     ```
 
 - Install and run the Sample app
-  - From the terminal window, navigate into [MyApp](https://github.com/mfpdev/mfp71-with-ionic2/tree/master/BlogApp) and run:
+  - From the terminal window, navigate into [BlogApp](https://github.com/mfpdev/mfp71-with-angular2/tree/master/BlogApp) and run:
 
   ```bash
   $ npm install
   ```
 
-  - [Transpile](https://www.wikiwand.com/en/Source-to-source_compiler) the TypeScript code in the [app](https://github.com/mfpdev/mfp71-with-angular/tree/master/BlogApp/app) folder with [gulp](http://gulpjs.com/) commands:
+  - [Transpile](https://www.wikiwand.com/en/Source-to-source_compiler) the TypeScript code in the [app](https://github.com/mfpdev/mfp71-with-angular2/tree/master/BlogApp/app) folder with [gulp](http://gulpjs.com/) commands:
 
     - Run `build` to transpile the [TypeScript](https://www.typescriptlang.org/) code once
 
     ```bash
     $ gulp build
     ```
-    - Or run `watch` to let `gulp` transpile the TypeScript code on every time you change something in the [app](https://github.com/mfpdev/mfp71-with-angular2/tree/master/MyApp/BlogApp) folder.
+    - Or run `watch` to let `gulp` transpile the TypeScript code on every time you change something in the [app](https://github.com/mfpdev/mfp71-with-angular2/tree/master/BlogApp) folder.
 
     ```bash
     $ gulp watch
