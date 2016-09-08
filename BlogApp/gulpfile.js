@@ -76,10 +76,11 @@ gulp.task('clean', function () {
 gulp.task('default', ['build']);
 
 gulp.task('watch', function () {
-    gulp.watch('app/**/*.ts', function (event) {
+    gulp.watch(['app/**/*.ts', 'app/**/*.html', 'app/**/*.css'], function (event) {
         console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
+        var path = event.path.substr(0, event.path.lastIndexOf(".")) + ".ts"
         var tsProject = typescript.createProject('./tsconfig.json', { typescript: require('typescript') });
-        tsProject.src([event.path])
+        tsProject.src([path])
             .pipe(inlineNg2Template())
             .pipe(sourcemaps.init())
             .pipe(typescript(tsProject))
