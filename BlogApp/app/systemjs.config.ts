@@ -1,3 +1,4 @@
+declare var System: any; 
 (function (global) {
     // map tells the System loader where to look for things
     var map = {
