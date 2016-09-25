@@ -69,3 +69,12 @@ xcuserdata/
 *.moved-aside
 *.xccheckout
 *.xcscmblueprint
+
+BlogApp/mobilefirst/com_ibm_myapp-all.wlapp
+BlogApp/mobilefirst/com_ibm_myapp-android-1.0.0.wlapp
+BlogApp/platforms/android/
+BlogApp/platforms/ios/
+BlogApp/plugins/android.json
+BlogApp/plugins/cordova-plugin-mfp/
+BlogApp/plugins/ios.json
+BlogApp/www/js/angular/

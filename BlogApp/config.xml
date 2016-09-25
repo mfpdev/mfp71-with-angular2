@@ -32,7 +32,7 @@
         <update src="res/screen/android/splash-xhdpi.9.png" target="res/drawable-xhdpi/splash.9.png" />
         <update src="res/screen/android/splash-xxhdpi.9.png" target="res/drawable-xxhdpi/splash.9.png" />
         <preference name="loginDisplay" value="embedded" />
-        <preference name="wlNativeVersion" value="1839145035 " />
+        <preference name="wlNativeVersion" value="1462353893" />
     </platform>
     <platform name="ios">
         <icon height="57" src="res/icon/ios/icon.png" width="57" />
@@ -64,8 +64,8 @@
         <preference name="loginDisplay" value="embedded" />
         <preference name="wlNativeVersion" value="3733673195" />
     </platform>
-    <preference name="mfpServerUrl" value="http://9.148.225.177:10080" />
-    <preference name="mfpServerRuntime" value="AngularAndMF71" />
+    <preference name="mfpServerUrl" value="http://9.148.225.237:10080" />
+    <preference name="mfpServerRuntime" value="Proj1" />
     <preference name="displayName" value="myapp" />
     <preference name="mfpManualInit" value="false" />
 </widget>
