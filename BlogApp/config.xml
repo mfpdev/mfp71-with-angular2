@@ -64,8 +64,8 @@
         <preference name="loginDisplay" value="embedded" />
         <preference name="wlNativeVersion" value="3733673195" />
     </platform>
-    <preference name="mfpServerUrl" value="http://9.148.225.159:10080" />
-    <preference name="mfpServerRuntime" value="TestMyProject" />
+    <preference name="mfpServerUrl" value="http://localhost:10080" />
+    <preference name="mfpServerRuntime" value="Proj1" />
     <preference name="displayName" value="myapp" />
     <preference name="mfpManualInit" value="false" />
 </widget>
