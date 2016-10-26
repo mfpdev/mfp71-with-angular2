@@ -14,46 +14,53 @@
  *    limitations under the License.
  */
 
-declare var System: any; 
-(function (global) {
-    // map tells the System loader where to look for things
-    var map = {
-        'app': './js/angular/app',
-        'rxjs': './js/angular/lib/rxjs',
+/**
+ * System configuration for Angular samples
+ * Adjust as necessary for your application needs.
+ */
 
-        '@angular/common': './js/angular/lib/@angular/common/bundles/common.umd.js',
-        '@angular/compiler': './js/angular/lib/@angular/compiler/bundles/compiler.umd.js',
-        '@angular/core': './js/angular/lib/@angular/core/bundles/core.umd.js',
-        '@angular/http': './js/angular/lib/@angular/http/bundles/http.umd.js',
-        '@angular/platform-browser': './js/angular/lib/@angular/platform-browser/bundles/platform-browser.umd.js',
-        '@angular/platform-browser-dynamic': './js/angular/lib/@angular/platform-browser-dynamic/bundles/platform-browser-dynamic.umd.js',
-        '@angular/router': './js/angular/lib/@angular/router/bundles/router.umd.js',
-    };
+declare var System: any;   
+
+(function (global) {
+  System.config({
+    paths: {
+      // paths serve as alias
+      'npm:': 'node_modules/'
+    },
+    // map tells the System loader where to look for things
+    map: {
+      // our app is within the app folder
+      'app': './js/angular/app',
+      'rxjs': './js/angular/lib/rxjs',
+      'angular-in-memory-web-api': './js/angular/lib/angular-in-memory-web-api',
+
+      
+      // angular bundles
+      '@angular/core': './js/angular/lib/@angular/core/bundles/core.umd.js',
+      '@angular/common': './js/angular/lib/@angular/common/bundles/common.umd.js',
+      '@angular/compiler': './js/angular/lib/@angular/compiler/bundles/compiler.umd.js',
+      '@angular/platform-browser': './js/angular/lib/@angular/platform-browser/bundles/platform-browser.umd.js',
+      '@angular/platform-browser-dynamic': './js/angular/lib/@angular/platform-browser-dynamic/bundles/platform-browser-dynamic.umd.js',
+      '@angular/http': './js/angular/lib/@angular/http/bundles/http.umd.js',
+      '@angular/router': './js/angular/lib/@angular/router/bundles/router.umd.js',
+      '@angular/forms': './js/angular/lib/@angular/forms/bundles/forms.umd.js',
+      // other libraries
+
+     
+    },
     // packages tells the System loader how to load when no filename and/or no extension
-    var packages = {
-        'app': { main: 'boot.js', defaultExtension: 'js' },
-        'rxjs': { defaultExtension: 'js' }
-    };
-    var packageNames = [
-        '@angular/common',
-        '@angular/compiler',
-        '@angular/core',
-        '@angular/http',
-        '@angular/platform-browser',
-        '@angular/platform-browser-dynamic',
-        '@angular/router',
-        '@angular/router-deprecated',
-        '@angular/testing',
-        '@angular/upgrade'
-    ];
-    var config = {
-        map: map,
-        packages: packages
-    };
-    // filterSystemConfig - index.html's chance to modify config before we register it.
-    if (global.filterSystemConfig) {
-        global.filterSystemConfig(config);
+    packages: {
+      app: {
+        main: './main.js',
+        defaultExtension: 'js'
+      },
+      rxjs: {
+        defaultExtension: 'js'
+      },
+      'angular-in-memory-web-api': {
+        main: './index.js',
+        defaultExtension: 'js'
+      }
     }
-    System.config(config);
+  });
 })(this);
-//# sourceMappingURL=systemjs.config.js.map

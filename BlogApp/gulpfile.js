@@ -72,7 +72,12 @@ gulp.task('copy-rxjs-lib', ['clean'], function () {
           .pipe(gulp.dest(libroot + "/rxjs"));
 });
 
-gulp.task('build', ['clean','build.lib','build.css','copy-rxjs-lib'], function () {
+gulp.task('copy-angular-in-memory-web-api', ['clean'], function () {
+        return gulp.src(['node_modules/angular-in-memory-web-api/**/*'])
+          .pipe(gulp.dest(libroot + "/angular-in-memory-web-api"));
+});
+
+gulp.task('build', ['clean','build.lib','build.css','copy-rxjs-lib','copy-angular-in-memory-web-api'], function () {
     var tsProject = typescript.createProject('./tsconfig.json', { typescript: require('typescript') });
     var tsSrcInlined = tsProject.src(['app/**/*.ts'])
         .pipe(inlineNg2Template());
